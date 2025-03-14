@@ -10,6 +10,7 @@ WORKDIR /app
 # Copy the project files
 COPY pom.xml .
 COPY src ./src
+COPY checkstyle.xml .
 
 # Copy common_example.properties to the container
 COPY src/main/environment/ecd_example.properties /app/src/main/environment/ecd_example.properties
